@@ -1,0 +1,9 @@
+services:
+  super:
+    image: nginx:latest
+    command: /bin/undefined_comand
+
+x-uffizzi:
+  ingress:
+    service: super
+    port: 80
